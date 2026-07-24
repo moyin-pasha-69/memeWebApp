@@ -9,10 +9,10 @@ A minimalist, fast web application for fetching and viewing modern memes with a 
 
 ## 📌 Features
 
-* **⚡ One-Click Refresh:** Instantly fetch a new meme with the click of a button[cite: 2, 3].
+* **⚡ One-Click Refresh:** Instantly fetch a new meme with the click of a button.
 * **🎯 Clean Dark Theme:** Sleek design matching the high-contrast yellow favicon icon.
-* **⌛ Smooth Loading UI:** Built-in loader animation for seamless state transitions[cite: 2, 4].
-* **📱 Responsive Layout:** Optimized for both mobile and desktop screens[cite: 4].
+* **⌛ Smooth Loading UI:** Built-in loader animation for seamless state transitions.
+* **📱 Responsive Layout:** Optimized for both mobile and desktop screens.
 
 ---
 
