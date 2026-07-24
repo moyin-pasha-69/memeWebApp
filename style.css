@@ -1,0 +1,90 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: gainsboro;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+}
+header {
+  width: 100%;
+  height: 60px;
+  color: black;
+  background-color: lightgrey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.meme-container {
+  max-width: 600px;
+  width: auto;
+  padding: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 8px;
+  text-align: center;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.meme-title {
+  max-width: 90%;
+  width: auto;
+}
+
+img {
+  max-width: 90%;
+  width: auto;
+}
+
+button {
+  border-radius: 40px;
+  border: none;
+  background-color: mediumslateblue;
+  color: whitesmoke;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+button:hover {
+  background-color: mediumblue;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.loader {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 0.9rem solid gray;
+  border-top: 0.9rem solid mediumblue;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
