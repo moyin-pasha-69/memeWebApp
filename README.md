@@ -5,7 +5,7 @@ A minimalist, fast web application for fetching and viewing modern memes with a 
 
 
 ---
-## Live link: https://moyin-pasha-69.github.io/memeWepApp/
+## Live link: https://moyin-pasha-69.github.io/memeWebApp/
 
 ## 📌 Features
 
