@@ -8,7 +8,7 @@ const btn = document.querySelector("button");
 
 document.addEventListener("click", async function (e) {
   btn.textContent = "Change Meme";
-  if (e.target === btn || e.target === container) {
+  if (e.target === btn || e.target === container || e.target === memeImage) {
     container.classList.add("hidden");
     showLoader();
     setTimeout(() => {
