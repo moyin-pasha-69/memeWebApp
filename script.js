@@ -6,24 +6,27 @@ const loader = document.querySelector(".loader");
 
 const btn = document.querySelector("button");
 
-btn.addEventListener("click", async () => {
-  container.classList.add("hidden");
-  showLoader();
-  setTimeout(() => {
-    container.classList.remove("hidden");
-  }, 300);
-  try {
-    const url = "https://meme-api.com/gimme/darkmemers";
-    const response = await fetch(url);
-
+document.addEventListener("click", async function (e) {
+  btn.textContent = "Change Meme";
+  if (e.target === btn || e.target === container) {
+    container.classList.add("hidden");
     showLoader();
-    if (!response.ok) {
-      throw new Error("something went wrong...");
+    setTimeout(() => {
+      container.classList.remove("hidden");
+    }, 300);
+    try {
+      const url = "https://meme-api.com/gimme/darkmemers";
+      const response = await fetch(url);
+
+      showLoader();
+      if (!response.ok) {
+        throw new Error("something went wrong...");
+      }
+      const data = await response.json();
+      showMemes(data);
+    } catch (error) {
+      console.log(error);
     }
-    const data = await response.json();
-    showMemes(data);
-  } catch (error) {
-    console.log(error);
   }
 });
 
